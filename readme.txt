@@ -29,9 +29,20 @@ You can place it anywhere in your website where you would like your contribution
 
 == Installation ==
 
+**Overview**
+
 1. Install the Raise The Money plugin
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place your shortcode (found in your Raise The Money account) anywhere in your website where you would like your contribution form to appear.
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Place your RTM shortcode (found in your Raise The Money account) anywhere in your website where you would like your contribution form to appear.
+
+**Install from your WordPress website (Recommended)**
+
+1. Sign in to your WordPress website
+2. Go to "Plugins" > "Add New"
+3. Search for "Raise The Money"
+4. Click "Install Now"
+5. Click "Activate Plugin"
+6. Place your RTM shortcode (found in your Raise The Money account) anywhere in your website where you would like your contribution form to appear.
 
 == Frequently Asked Questions ==
 
