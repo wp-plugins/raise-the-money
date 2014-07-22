@@ -3,7 +3,7 @@
 Plugin Name: Raise The Money
 Plugin URI: https://raisethemoney.com
 Description: A WordPress plugin for embedding the Raise The Money contribution form in your website.
-Version: 0.1
+Version: 0.2
 Author: Raise The Money
 Author Email: support@raisethemoney.com
 License:

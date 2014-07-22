@@ -64,5 +64,8 @@ No upgrades have been released.
 
 == Changelog ==
 
+= 0.2 =
+Fix issue widget form error
+
 = 0.1 =
 Initial release

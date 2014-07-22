@@ -39,14 +39,9 @@ class RaiseTheMoneyWidget extends WP_Widget {
 
   // widget form creation
   function form($instance) {
-    // Check values
-    if( $instance) {
-      $title = esc_attr($instance['title']);
-      $shortcode = esc_attr($instance['shortcode']);
-    } else {
-      $title = '';
-      $shortcode = '';
-    }
+
+    $title = isset( $instance['title'] ) ? esc_attr($instance['title']) : '';
+    $shortcode = isset( $instance['shortcode'] ) ? esc_attr($instance['shortcode']) : '';
     ?>
 
     <p>
