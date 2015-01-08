@@ -2,8 +2,8 @@
 Contributors: Contributors: Raise The Money
 Tags: political, fundraising, donate, contributions
 Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Tested up to: 4.1
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,9 @@ There are currently no screenshots available.
 No upgrades have been released.
 
 == Changelog ==
+
+= 0.3 =
+Add option for churches, nonprofits, and social causes
 
 = 0.2 =
 Fix widget form error
