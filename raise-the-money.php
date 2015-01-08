@@ -3,7 +3,7 @@
 Plugin Name: Raise The Money
 Plugin URI: https://raisethemoney.com
 Description: A WordPress plugin for embedding the Raise The Money contribution form in your website.
-Version: 0.2
+Version: 1.0
 Author: Raise The Money
 Author Email: support@raisethemoney.com
 License:
@@ -54,11 +54,12 @@ class RaiseTheMoney {
     // Extract the attributes
     extract(shortcode_atts(array(
       'form' => 'not_found',
-      'type' => ''
+      'type' => '',
+      'site' => 'politics'
     ), $atts));
 
     // Output contribution form snippet
-    return '<script type="text/javascript"> (function(){var scripts = document.getElementsByTagName("script"), thisScriptTag = scripts[scripts.length - 1], iframe = document.createElement("iframe"); thisScriptTag.parentNode.insertBefore(iframe, thisScriptTag); iframe.src = "https://raisethemoney.com/' . $form . '/' . $type .'?iframe=true"; iframe.width = "100%"; iframe.scrolling = "no"; iframe.setAttribute("seamless", true); iframe.setAttribute("frameBorder", 0); window.addEventListener("message", function(e) {iframe.height = e.data; }); })(); </script>';
+    return '<script type="text/javascript"> (function(){var scripts = document.getElementsByTagName("script"), thisScriptTag = scripts[scripts.length - 1], iframe = document.createElement("iframe"); thisScriptTag.parentNode.insertBefore(iframe, thisScriptTag); iframe.src = "https://' . $site . '.raisethemoney.com/' . $form . '/' . $type .'?iframe=true"; iframe.width = "100%"; iframe.scrolling = "no"; iframe.setAttribute("seamless", true); iframe.setAttribute("frameBorder", 0); window.addEventListener("message", function(e) {iframe.height = e.data; }); })(); </script>';
   }
 } // end class
 new RaiseTheMoney();
